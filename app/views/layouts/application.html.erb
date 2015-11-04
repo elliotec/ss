@@ -12,7 +12,12 @@
   </head>
   <body>
 
-    <%= render "refills/navigation" %>
+    <% if controller.controller_name == "welcome" %>
+      <%= render "refills/navigation" %>
+    <% else %>
+      <%= render "refills/centered_navigation" %>
+    <% end %>
+
     <%= render "refills/flashes" %>
     <%= yield %>
     <%= render "refills/footer" %>

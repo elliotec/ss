@@ -1,0 +1,19 @@
+<header class="centered-navigation" role="banner">
+  <div class="centered-navigation-wrapper">
+    <a href="javascript:void(0)" class="mobile-logo">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image">
+    </a>
+    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+        <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
+        <li class="nav-link logo">
+    <%= link_to "<img src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png'>".html_safe, root_path, {:class => 'logo'} %>
+        </li>
+        <li class="nav-link"><%= render 'devise/menu/login_items' %></li>
+        <li class="nav-link"><%= render 'devise/menu/registration_items' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
